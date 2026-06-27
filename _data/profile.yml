@@ -3,8 +3,8 @@ secondary_name: ""
 navbar_name: "Your Name"
 
 positions:
-- name: Title or Position
-- name: Affiliation Name
+- name: Master student of Material Engineerding
+- name: Harbin University of Science and Technology
   logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
 
 
@@ -41,7 +41,7 @@ education:
     School of Materials Science and Chemical Engineering <br/>
     Master student
   date: Sep. 2026 - present
-- name: Peking University
+- name: Harbin University of Science and Technology
   logo: /assets/images/badges/PKU_red.png
   position: Rongcheng College <br/>
     Undergraduate student
