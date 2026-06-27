@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Your Name"
 
 positions:
-- name: Master student of Material Engineerding
+- name: Master student of Material Engineerding <br/>
 - name: Harbin University of Science and Technology
   logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
 
