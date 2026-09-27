@@ -10,8 +10,8 @@ abstract: >-
 cover:          /assets/images/covers/1-s2.0-S0263224126030034-ga1_lrg.jpg
 authors:
   - Shuai Zhang
-  - Chengyu Fu
-  - Zhenming Yue
+  - Chengyu Fu*
+  - Zhenming Yue#(corresponding author)
 
 links:
   DOI: https://doi.org/10.1016/j.measurement.2026.123293
