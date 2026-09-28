@@ -13,6 +13,6 @@ authors:
   - Chengyu Fu
   - Zhenming Yue#(corresponding author)
 
-links:
-  DOI: https://doi.org/10.1016/j.measurement.2026.123293
+pdf: /assets/Full Text/（山大）付承宇-基于仿真与WOA-Attention-BP混合神经网络的管材自由弯曲回弹预测(Measurement 6.1)(3).pdf
+doi: https://doi.org/10.1016/j.measurement.2026.123293
 ---
