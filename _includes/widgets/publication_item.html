@@ -122,9 +122,8 @@
             {% if item.doi %}
             <p class="small pb-0 mb-0 lh-125 text-muted pub-paper-links">
                 <a target="_blank" href="https://doi.org/{{ item.doi }}">
-                    [DOI]
+                    [DOI]{{ item.doi }}
                 </a>
-                {{ item.doi }}
             </p>
             {% endif %}
 
@@ -218,9 +217,8 @@
                 {% if item.doi %}
                 <p class="small pb-0 mb-0 lh-125 text-muted pub-paper-links">
                     <a target="_blank" href="https://doi.org/{{ item.doi }}">
-                        [DOI]
+                        [DOI]{{ item.doi }}
                     </a>
-                    {{ item.doi }}
                 </p>
                 {% endif %}
 
