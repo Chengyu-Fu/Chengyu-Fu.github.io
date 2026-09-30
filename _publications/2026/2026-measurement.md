@@ -13,6 +13,6 @@ authors:
   - Chengyu Fu
   - Zhenming Yue#(corresponding author)
 
-pdf: /assets/Full Text/measurement.PDF
+pdf: /assets/Full Text/measurement.pdf
 doi: https://doi.org/10.1016/j.measurement.2026.123293
 ---
