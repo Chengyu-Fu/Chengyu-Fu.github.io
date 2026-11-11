@@ -1,0 +1,26 @@
+{% include locale.html %}
+{% assign section_name = page.navbar_title | default: "" %}
+{% assign nav_page = site.data.navigation.pages | where: "name", section_name | first %}
+{% if language == "zh-CN" %}
+    {% assign alternate_language = "en" %}
+    {% assign alternate_label = "English" %}
+    {% assign alternate_path = nav_page.url %}
+{% else %}
+    {% assign alternate_language = "zh-CN" %}
+    {% assign alternate_label = "中文" %}
+    {% assign alternate_path = nav_page[alternate_language].url %}
+{% endif %}
+{% assign alternate_path = page.alternate_url | default: alternate_path %}
+{% if include.head %}
+    {% if alternate_path %}
+    <link rel="alternate" hreflang="{{ alternate_language }}" href="{{ alternate_path | absolute_url }}">
+    <link rel="alternate" hreflang="{{ language }}" href="{{ page.url | absolute_url }}">
+    {% endif %}
+{% else %}
+    {% unless alternate_path %}
+        {% assign fallback_name = include.fallback | default: "Home" %}
+        {% assign fallback_page = site.data.navigation.pages | where: "name", fallback_name | first %}
+        {% assign alternate_path = fallback_page[alternate_language].url | default: fallback_page.url %}
+    {% endunless %}
+    <a class="btn btn-sm btn-outline-secondary mr-2 mr-lg-0" href="{{ alternate_path | relative_url }}" lang="{{ alternate_language }}" hreflang="{{ alternate_language }}">{{ alternate_label }}</a>
+{% endif %}

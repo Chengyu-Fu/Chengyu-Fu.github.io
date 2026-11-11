@@ -1,0 +1,54 @@
+en:
+  menu: Menu
+  toggle_navigation: Toggle navigation
+  updated: Last updated
+  footer_date: "%b %Y"
+  post_date: "%B %d, %Y"
+  news_date: "%b %d"
+  about: About Me
+  education: Education
+  experience: Experience
+  honors: Honors & Awards
+  cv: Curriculum Vitae
+  portrait: Portrait
+  wechat: WeChat
+  close: Close
+  news: News
+  selected_publications: Selected Publications
+  view_all: view all
+  all_publications: All publications
+  show_more: Show more
+  show_less: Show less
+  full_text: Full Text
+  equal_contribution: equal contribution
+  corresponding_author: corresponding author
+  read_more: Read more
+  table_of_contents: Table of Contents
+zh-CN:
+  menu: 菜单
+  toggle_navigation: 展开或收起导航
+  updated: 最后更新
+  footer_date: "%Y 年 %-m 月"
+  post_date: "%Y 年 %-m 月 %-d 日"
+  news_date: "%-m 月 %-d 日"
+  about: 个人简介
+  education: 教育经历
+  experience: 工作与科研经历
+  honors: 荣誉与奖项
+  cv: 个人简历
+  portrait: 个人照片
+  wechat: 微信
+  close: 关闭
+  news: 最新动态
+  selected_publications: 代表性论文
+  view_all: 查看全部
+  all_publications: 全部论文
+  show_more: 展开摘要
+  show_less: 收起摘要
+  full_text: 全文
+  equal_contribution: 同等贡献
+  corresponding_author: 通讯作者
+  read_more: 阅读全文
+  table_of_contents: 目录
+  showcase_groups:
+    Cats: 猫咪

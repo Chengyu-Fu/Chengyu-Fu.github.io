@@ -1,0 +1,84 @@
+primary_name: "Chengyu Fu"
+secondary_name: ""
+navbar_name: "Chengyu Fu"
+
+positions:
+- name: Master's student in Materials Science and Engineering
+  zh-CN:
+    name: 材料科学与工程硕士研究生
+- name: Harbin University of Science and Technology
+  logo: /assets/images/badges/理工校徽.jpg  # Logo is optional
+  zh-CN:
+    name: 哈尔滨理工大学
+
+
+email: "chengyufu.work@gmail.com"
+# cv_link: link-to-your-cv-file
+gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
+github: Chengyu-Fu
+twitter: fchngy46720  # Do not include the '@' symbol
+# wechat_qrcode: /assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+# linkedin: your-linked-in-id
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    Hello, my name is Fu Chengyu. Welcome to my homepage!
+    I received my Bachelor of Engineering degree from Harbin University of Science and Technology in 2025. 
+    Currently, I am a master's student majoring in Materials Science and Engineering at the same university. 
+    My research interests primarily focus on applying machine learning and physics-informed fusion methods to material forming processes.
+     I have conducted work in areas such as prediction of springback in tube bending, springback compensation, flow stress prediction, as well as machine learning-assisted high-entropy alloy design. 
+     Feel free to contact me anytime for communication and collaboration!
+  </p>
+
+portrait_url: /assets/images/photos/付承宇证件照.jpg
+portrait_caption: Portrait of Chengyu Fu
+
+zh-CN:
+  primary_name: 付承宇
+  navbar_name: 付承宇
+  portrait_caption: 付承宇
+  short_bio: >-
+    <p>你好，我是付承宇。2025 年，我获哈尔滨理工大学工学学士学位，目前在该校攻读材料科学与工程硕士学位。</p>
+    <p>我主要研究如何将机器学习与物理机理相结合，用于材料成形过程的建模与预测。此前的工作涉及管材弯曲回弹预测与补偿、流动应力预测，以及机器学习辅助的高熵合金设计。欢迎交流与合作。</p>
+
+education:
+- name: Harbin University of Science and Technology
+  logo: /assets/images/badges/理工校徽.jpg
+  position: >- 
+    School of Materials Science and Chemical Engineering <br/>
+    Master's student
+  date: Sep. 2026 - present
+  zh-CN:
+    name: 哈尔滨理工大学
+    position: 材料科学与化学工程学院 <br/> 硕士研究生
+    date: 2026 年 9 月至今
+- name: Harbin University of Science and Technology
+  logo: /assets/images/badges/理工校徽.jpg
+  position: Rongcheng College <br/>
+    Undergraduate student
+  date: Sep. 2021 - Jul. 2025
+  zh-CN:
+    name: 哈尔滨理工大学
+    position: 荣成学院 <br/> 本科生
+    date: 2021 年 9 月至 2025 年 7 月
+
+# experience:
+# - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+#   position: Research Intern
+#   date: Sep. 2019 - Jul. 2021
+
+awards:
+
+- name: Provincial Outstanding Graduate
+  date: 2025
+  zh-CN:
+    name: 省级优秀毕业生
+- name: Provincial Excellent Student
+  date: 2023
+  zh-CN:
+    name: 省级三好学生

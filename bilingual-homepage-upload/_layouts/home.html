@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% if page.profile_layout == "wide" %}
+    {% include widgets/profile_card.html %}
+    {% include widgets/homepage_sections.html %}
+{% else %}
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+        {% include widgets/profile_card_bio_only.html %}
+        {% if page.lang != "zh-CN" %}
+            {% include widgets/debug_repo_name.html %}
+            {% include widgets/debug_url.html %}
+        {% endif %}
+        {% include widgets/homepage_sections.html %}
+    </div>
+</div>
+{% endif %}

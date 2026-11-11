@@ -1,0 +1,47 @@
+<div>
+    <div id="{{ include.id | slugify }}" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {% for item in include.images %}
+            <li data-target="#{{ include.id | slugify }}" data-slide-to="{{ forloop.index0 }}" {% if forloop.index == 1 %}class="active"{% endif %}></li>
+            {% endfor %}
+        </ol>
+        <div class="carousel-inner" style="height: {{ include.height }};">
+            {% for item in include.images %}
+            <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
+                {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}
+                <div class="lazy always-load d-block rounded-xl" data-src="{{ item.src | relative_url }}" style="height: {{ include.height }};">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>
+                        {% if item.title_zh %}
+                            <span data-content-language="en" lang="en">{{ item.title }}</span>
+                            <span data-content-language="zh-CN" lang="zh-CN">{{ item.title_zh }}</span>
+                        {% else %}
+                            {{ item.title }}
+                        {% endif %}
+                    </h5>
+                    <p>
+                        {% if item.desc_zh %}
+                            <span data-content-language="en" lang="en">{{ item.desc }}</span>
+                            <span data-content-language="zh-CN" lang="zh-CN">{{ item.desc_zh }}</span>
+                        {% else %}
+                            {{ item.desc }}
+                        {% endif %}
+                    </p>
+                </div>
+                {% if item.link %}</a>{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="carousel-control-prev" type="button" data-target="#{{ include.id | slugify }}" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only" data-content-language="en" lang="en">Previous</span>
+            <span class="sr-only" data-content-language="zh-CN" lang="zh-CN">上一张</span>
+        </div>
+        <div class="carousel-control-next" type="button" data-target="#{{ include.id | slugify }}" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only" data-content-language="en" lang="en">Next</span>
+            <span class="sr-only" data-content-language="zh-CN" lang="zh-CN">下一张</span>
+        </div>
+    </div>
+</div>

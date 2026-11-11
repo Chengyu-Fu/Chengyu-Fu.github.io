@@ -1,0 +1,17 @@
+{% include locale.html %}
+{% assign publications = include.publications %}
+{% assign publications_page = site.data.navigation.pages | where: "name", "Publications" | first %}
+{% assign publications_path = publications_page[language].url | default: publications_page.url %}
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+    <h6 class="border-bottom border-gray p-3 mb-0">
+        {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> {{ ui.selected_publications }}{% endif %}
+        <a href="{{ publications_path | relative_url }}">({{ ui.view_all }} <i class="fas fa-angle-double-right"></i>)</a>
+    </h6>
+    {% for item in publications limit:include.limit %}
+        {% include widgets/publication_item.html item=item first=false last=false %}    
+    {% endfor %}
+    <h6 class="d-block p-3 mt-0 text-right">
+        <a href="{{ publications_path | relative_url }}">{{ ui.all_publications }} <i class="fas fa-angle-double-right"></i></a>
+    </h6>
+</div>
+
